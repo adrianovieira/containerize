@@ -59,7 +59,7 @@ Vagrant.configure(2) do |config|
   config.vm.provider "virtualbox" do |virtualbox| # Virtualbox.settings
     #   virtualbox.gui = true
     virtualbox.customize [ "modifyvm", :id, "--cpus", 2 ]
-    virtualbox.customize [ "modifyvm", :id, "--memory", 20248 ]
+    virtualbox.customize [ "modifyvm", :id, "--memory", 2048 ]
     virtualbox.customize [ "modifyvm", :id, "--name", "containerize-host" ]
     virtualbox.customize [ "modifyvm", :id, "--groups", "/containerize" ]
   end # end Virtualbox.settings
