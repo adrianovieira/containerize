@@ -1,0 +1,10 @@
+version: '2'
+services:
+  devopsdays_2016_brasilia:
+    build: .
+    container_name: devopsdays_2016_brasilia
+    image: adrianovieira/devopsdays_2016_brasilia
+    ports:
+     - "1313:1313"
+    volumes:
+     - ./devopsdays-web:/var/www/html/site
