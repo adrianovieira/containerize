@@ -52,6 +52,7 @@ Vagrant.configure(2) do |config|
   #config.vm.network "forwarded_port", guest: 5000, host: 5000 #, auto_correct: true
   #config.vm.network "forwarded_port", guest: 8080, host: 8080 #, auto_correct: true
   #config.vm.network "forwarded_port", guest: 8443, host: 8443 #, auto_correct: true
+  #config.vm.network "forwarded_port", guest: 1313, host: 1313 #, auto_correct: true
 
   #config.vm.network "private_network", ip: "10.2.2.2"
   #config.vm.network "public_network", bridge: ["en1: Wi-Fi (AirPort)", "en0: Ethernet", "<what>"]
