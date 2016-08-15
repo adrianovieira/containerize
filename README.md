@@ -54,11 +54,19 @@ Proof of Concept for image sizes:
 
 - Docker-1.12+ <https://docker.com>
 
+
 ### Optionals
-- Vagrant plugins
-  - vagrant-persistent-storage: creates a persistent storage and attaches it to guest machine
-  - vagrant-proxyconf: environment proxy settings
-  - vagrant-cachier: share a common package cache among similar VM instances
+- VirtualBox-5.0+ <http://www.virtualbox.org/>
+- Vagrant-1.7+ <http://vagrantup.com/>
+  - Vagrant plugins
+    - vagrant-persistent-storage: creates a persistent storage and attaches it to guest machine
+    - vagrant-proxyconf (*Proxy Configuration Plugin for Vagrant*)
+    - vagrant-cachier: share a common package cache among similar VM instances
+
+    - vagrant-hosts (*vagrant-hosts - Manage vagrant guest local DNS resolution*)
+    - vagrant-hostsupdater (*Vagrant::Hostsupdater - adds an entry to your /etc/hosts file on the host system*)
+      * **optional** *install and use it only if you're behind a proxy*
+  - Box ***`adrianovieira/centos7-docker1.12-GA`*** or ***`adrianovieira/boxes/centos7-kernel4.4-vbox5.0-docker1.12GA`*** (published on https://atlas.hashicorp.com/adrianovieira/boxes)
 
 ## Setup and Tasting
 
