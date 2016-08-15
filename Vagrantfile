@@ -38,7 +38,7 @@ Vagrant.configure(2) do |config|
   #config.vm.box = "adrianovieira/boxes/centos7-kernel4.4-vbox5.0-docker1.12GA"
   config.vm.box = "adrianovieira/centos7-docker1.12-GA"
   config.vm.box_check_update = false
-  config.vm.hostname = "containerize-host"
+  config.vm.define "containerize-host"
 
   # folder to mount on VM host
   config.vm.synced_folder ".", "/vagrant", disabled: true
