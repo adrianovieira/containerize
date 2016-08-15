@@ -17,10 +17,13 @@ Conteinerizing apps and systems.
 ## Technologies
 
 * CEntOS-7
-* Docker
-* Rancher
-* Mesos
-* DC/OS
+* Docker-1.12+
+
+- others
+
+  * Rancher
+  * Mesos
+  * DC/OS
 
 ## Authors
 
