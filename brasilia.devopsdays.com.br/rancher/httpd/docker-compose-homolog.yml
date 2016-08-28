@@ -1,0 +1,14 @@
+brasilia-devopsdays:
+  labels:
+    io.rancher.container.pull_image: always
+  tty: true
+  image: adrianovieira/brasilia.devopsdays.com.br.httpd:beta1.program
+  stdin_open: true
+lb-brasilia-devopsdays:
+  ports:
+  - 1380:80
+  tty: true
+  image: rancher/load-balancer-service
+  links:
+  - brasilia-devopsdays:brasilia-devopsdays
+  stdin_open: true
