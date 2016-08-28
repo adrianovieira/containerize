@@ -2,7 +2,7 @@ brasilia-devopsdays:
   labels:
     io.rancher.container.pull_image: always
   tty: true
-  image: adrianovieira/brasilia.devopsdays.com.br.httpd:1.0.1
+  image: adrianovieira/brasilia.devopsdays.com.br.httpd:1.1
   stdin_open: true
 lb-brasilia-devopsdays:
   ports:
