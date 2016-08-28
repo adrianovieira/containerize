@@ -1,5 +1,5 @@
 brasilia-devopsdays:
-  scale: 1
+  scale: 3
 lb-brasilia-devopsdays:
   scale: 1
   load_balancer_config:
