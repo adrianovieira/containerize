@@ -3,10 +3,10 @@ services:
   brasilia.devopsdays.com.br:
     build:
       context: .
-    image: adrianovieira/brasilia.devopsdays.com.br
+    image: adrianovieira/brasilia.devopsdays.com.br.hugo
     ports:
      - "1313:1313"
     environment:
       HUGO_BASE_URL: localhost
       HUGO_BASE_URL_PORT: 1313
-      HUGO_BUILD_DRAFTS: 
+      HUGO_BUILD_DRAFTS:
