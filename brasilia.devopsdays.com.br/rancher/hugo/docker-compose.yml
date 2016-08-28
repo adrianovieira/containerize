@@ -1,0 +1,17 @@
+LB-Test-brasilia-devopsdays:
+  ports:
+  - 1313:1313
+  tty: true
+  image: rancher/load-balancer-service
+  links:
+  - Test-brasilia-devopsdays:Test-brasilia-devopsdays
+  stdin_open: true
+Test-brasilia-devopsdays:
+  environment:
+    HUGO_BASE_URL: brasilia.devopsdays.com.br
+    HUGO_BUILD_DRAFTS: -DF
+  labels:
+    io.rancher.container.pull_image: always
+  tty: true
+  image: adrianovieira/brasilia.devopsdays.com.br.hugo:beta1.program
+  stdin_open: true
