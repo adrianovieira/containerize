@@ -1,0 +1,17 @@
+version: '2'
+services:
+  osem:
+    build: .
+    image: adrianovieira/osem
+    ports:
+     - "80:80"
+    environment:
+      OSEM_NAME:              #The name of your page e.g. Events Hacklab SaaS
+      OSEM_HOSTNAME:          #The host this OSEM instance runs on e.g. events.hacklab.org
+      OSEM_EMAIL_ADDRESS:     #The address OSEM uses for sending mails e.g. events@hacklab.org
+      OSEM_ICHAIN_ENABLED:    #Enable the usage of devise_ichain_authenticatable (true/false)
+      OSEM_SMTP_ADDRESS:      #The smtp server to use e.g smtp.hacklab.org
+      OSEM_SMTP_PORT:         #The port on the smtp server
+      OSEM_SMTP_USERNAME:     #The user for the smtp server
+      OSEM_SMTP_PASSWORD:     #The password for the smtp server
+
