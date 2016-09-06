@@ -15,8 +15,8 @@ EXPOSE 80
 
 WORKDIR /var/www/html/site
 
-# add your source <website> directory
-# ADD website /var/www/html/site
+# add your root source <website> directory
+ONBUILD ADD . /var/www/html/site
 
 # run Hugo site
 CMD hugo server --verbose --verboseLog --watch=${HUGO_WATCH} ${HUGO_BUILD_DRAFTS} --bind=0.0.0.0 --baseURL ${HUGO_BASE_URL} --port ${HUGO_BASE_URL_PORT}
