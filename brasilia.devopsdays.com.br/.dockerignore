@@ -1,0 +1,9 @@
+.vagrant
+*/.git
+.git
+build.sh
+docker-compose.yml
+Dockerfile-httpd
+Dockerfile-hugo
+Dockerfile
+.dockerignore

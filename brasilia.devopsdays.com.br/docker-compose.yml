@@ -1,0 +1,22 @@
+version: '2'
+services:
+  brasilia.devopsdays.com.br.hugo:
+    build:
+      context: .
+      dockerfile: Dockerfile-hugo
+    image: adrianovieira/brasilia.devopsdays.com.br.hugo
+    ports:
+     - "1313:1313"
+    environment:
+      HUGO_BASE_URL: 10.122.19.168
+      HUGO_BASE_URL_PORT: 1313
+      HUGO_BUILD_DRAFTS:
+    volumes:
+      - ./build/website:/tmp/website
+  brasilia.devopsdays.com.br.httpd:
+    build:
+        context: build
+        dockerfile: Dockerfile-httpd
+    image: adrianovieira/brasilia.devopsdays.com.br.httpd
+    ports:
+     - "80:80"
