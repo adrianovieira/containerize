@@ -1,7 +1,0 @@
-version: '2'
-services:
-  brasilia.devopsdays.com.br:
-    build: .
-    image: adrianovieira/brasilia.devopsdays.com.br.httpd
-    ports:
-     - "80:80"
