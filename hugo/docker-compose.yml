@@ -1,0 +1,7 @@
+version: '2'
+services:
+  web:
+    build: .
+    image: adrianovieira/hugo
+    ports:
+     - "1313:1313"
